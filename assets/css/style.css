@@ -50,6 +50,7 @@ p {
   color: #fff;
   border-radius: 5px;
   font-size: 20px;
+  border: none;
 }
 
 .btn-blue {
@@ -58,6 +59,7 @@ p {
   font-weight: 600;
   color: #fff;
   border-radius: 5px;
+  border: none;
 }
 
 .hero {
@@ -101,6 +103,7 @@ p {
   font-weight: 600;
   padding: 14px 37px;
   transition: 0.5s;
+  border: none;
 }
 
 .btn-apply-now button:hover {
@@ -110,14 +113,52 @@ p {
   padding: 14px 37px;
 }
 
+.about-heading h1 {
+  font-size: 45px;
+  color: #00044a;
+}
+
+.about-content p {
+  font-weight: 400 !important;
+  font-size: 18px;
+}
+
+.job-category-box {
+  border: 0.5px solid #ddd;
+}
+
+.btn-browse-job button {
+  color: #000dff;
+  background-color: #fff;
+  font-weight: 600;
+  padding: 14px 37px;
+  transition: 0.5s;
+  border: none;
+}
+
+.btn-browse-job button:hover {
+  color: var(--text-blue);
+  background-color: #f0f1ff;
+  font-weight: 600;
+  padding: 14px 37px;
+}
+
+.job-category-box:hover button {
+  background-color: #f0f1ff;
+  color: #000dff;
+  margin-left: 15px;
+}
+
 @media screen and (max-width: 476px) {
   .btn-login {
     padding: 8px 29px;
     font-size: 15px;
   }
+
   .job-heading {
     font-size: 45px;
   }
+
   .btn {
     padding: 17px 29px;
     font-size: 15px;
@@ -125,6 +166,11 @@ p {
 
   .btn-blue {
     padding: 16px 49px;
+  }
+
+  .about-heading h1 {
+    font-size: 30px;
+    color: #00044a;
   }
 }
 
@@ -159,9 +205,11 @@ p {
     padding: 8px 29px;
     font-size: 15px;
   }
+
   .job-heading {
     font-size: 45px;
   }
+
   .btn {
     padding: 17px 29px;
     font-size: 15px;

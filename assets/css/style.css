@@ -1,0 +1,76 @@
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+:root {
+  --green-color: #27cb8b;
+  --blue-color: #000dff;
+  --background-green: #eafcfc;
+  --text-green: #58e5e9;
+}
+
+p {
+  color: #6d6e8d;
+  font-weight: 500;
+}
+
+.nav-links li {
+  font-weight: 600;
+  padding: 0px 10px;
+}
+
+.btn-login {
+  padding: 13px 49px;
+  background-color: var(--green-color);
+  font-weight: 600;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.btn {
+  padding: 13px 49px;
+  background-color: var(--green-color);
+  font-weight: 600;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.btn-blue {
+  padding: 16px 49px;
+  background-color: var(--blue-color);
+  font-weight: 600;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.hero {
+  background-color: #f1f5f9;
+}
+
+.job-heading {
+  font-size: 70px;
+  font-weight: 700;
+  color: #00044a;
+  letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 476px) {
+  .btn-login {
+    padding: 8px 29px;
+    font-size: 15px;
+  }
+  .job-heading {
+    font-size: 45px;
+  }
+  .btn {
+    padding: 17px 29px;
+    font-size: 15px;
+  }
+
+  .btn-blue {
+    padding: 16px 49px;
+  }
+}

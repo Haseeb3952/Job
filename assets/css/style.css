@@ -149,6 +149,9 @@ p {
   margin-left: 15px;
 }
 
+.review-section {
+  background-color: var(--blue-color);
+}
 @media screen and (max-width: 476px) {
   .btn-login {
     padding: 8px 29px;

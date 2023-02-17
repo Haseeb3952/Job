@@ -13,6 +13,13 @@
       crossorigin="anonymous"
     />
 
+    <!-------------------------------------------- Uni Icons CDN --------------------------------------------->
+
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
     <!-------------------------------------------- Slik Slider CDN ------------------------------------------->
 
     <link
@@ -50,6 +57,13 @@
     <!-------------------------------------------- Custom CSS File ------------------------------------------->
 
     <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-------------------------------------------- Font Awesome CDN ------------------------------------------>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Job Finder</title>
   </head>
   <body>
@@ -57,58 +71,68 @@
     <main>
       <section class="hero">
         <div class="container">
-          <nav class="navbar navbar-expand-lg navbar-light bg-transparent mt-2">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"
-                ><img
-                  src="./assets/images/logo.webp"
-                  alt="logo"
-                  class="img-fluid"
-              /></a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul
-                  class="navbar-nav mx-auto mb-2 mb-lg-0 text-uppercase nav-links"
+          <div class="row py-md-2">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#"
+                  ><img
+                    src="./assets/images/logo.webp"
+                    alt="logo"
+                    class="img-fluid"
+                /></a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
                 >
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
-                      >Home</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
-                      >Browse Job</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
-                      >Page</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
-                      >Contact</a
-                    >
-                  </li>
-                </ul>
-                <div class="">
-                  <button class="btn-login border-0 text-uppercase tex-white">
-                    Log in
-                  </button>
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul
+                    class="navbar-nav mx-auto mb-2 mb-lg-0 text-uppercase nav-links"
+                  >
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Browse Job</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Page</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Contact</a
+                      >
+                    </li>
+                  </ul>
+                  <div class="d-flex align-items-center gap-3">
+                    <button class="btn-post border-0 text-uppercase tex-white">
+                      Post A Job
+                    </button>
+
+                    <a href="" class="btn-login">
+                      <span></span>
+                      <button>Log in</button>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </nav>
+            </nav>
+          </div>
         </div>
 
         <!------------------------------------------ Navbar Section Ended ------------------------------------>
@@ -123,10 +147,12 @@
               <div
                 class="d-flex align-items-center gap-3 mt-5 flex-md-row flex-column"
               >
-                <button class="btn-blue border-0 text-uppercase">
+                <button
+                  class="btn-blue button_slide slide_right border-0 text-uppercase"
+                >
                   Looking For a Job?
                 </button>
-                <button class="btn">Find Talent</button>
+                <button class="btn-green">Find Talent</button>
               </div>
             </div>
             <div class="col-12 col-md-6 mt-md-5">
@@ -168,7 +194,7 @@
 
       <!----------------------------------------- Slick Slider Section Started ------------------------------->
 
-      <section class="bg-white py-5">
+      <section class="bg-white py-5 px-2">
         <div class="container">
           <div class="row slider gy-5 py-md-5 py-5">
             <div class="col-md-12 px-2">
@@ -329,7 +355,7 @@
 
       <!------------------------------------------- About Section Started ------------------------------------>
 
-      <section class="hero">
+      <section class="about">
         <div class="container py-5">
           <div class="row py-5 d-flex align-items-center">
             <div class="col-12 col-md-6 py-md-5">
@@ -360,7 +386,9 @@
               </div>
               <div class="">
                 <a href="#">
-                  <button class="btn-blue text-uppercase my-md-0 my-3">
+                  <button
+                    class="btn-blue button_slide slide_right border-0 text-uppercase"
+                  >
                     Find Talent
                   </button>
                 </a>
@@ -524,21 +552,199 @@
               <div class="review-section">
                 <div class="owl-carousel owl-theme">
                   <div class="reviews">
-                    <p>
+                    <i class="fa fa-quote-left fs-1" aria-hidden="true"></i>
+                    <p class="reviews-content">
                       "The automated process starts as soon as your clothe go
                       into the machine. This site outcome is gleaming clothe.
                       Placeholder text commonly used. In publishing and graphic.
                     </p>
+                    <div class="d-flex align-items-center gap-3 mt-2">
+                      <div class="testimonial">
+                        <img
+                          src="./assets/images/testimonial.webp"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div>
+                        <h6 class="fw-bold text-white testimonial-name">
+                          Abdul Haseeb
+                        </h6>
+                        <p class="text-white testimonial-job">
+                          Front-End Developer at Horizam
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <div class="item">2</div>
-                  <div class="item">3</div>
-                  <div class="item">4</div>
-                  <div class="item">5</div>
+
+                  <div class="item">
+                    <div class="reviews">
+                      <i class="fa fa-quote-left fs-1" aria-hidden="true"></i>
+                      <p class="reviews-content">
+                        "The automated process starts as soon as your clothe go
+                        into the machine. This site outcome is gleaming clothe.
+                        Placeholder text commonly used. In publishing and
+                        graphic.
+                      </p>
+                      <div class="d-flex align-items-center gap-3 mt-2">
+                        <div class="testimonial">
+                          <img
+                            src="./assets/images/testimonial.webp"
+                            alt=""
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div>
+                          <h6 class="fw-bold text-white testimonial-name">
+                            Salman Mehmood
+                          </h6>
+                          <p class="text-white testimonial-job">PAF Officer</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="reviews">
+                      <i class="fa fa-quote-left fs-1" aria-hidden="true"></i>
+                      <p class="reviews-content">
+                        "The automated process starts as soon as your clothe go
+                        into the machine. This site outcome is gleaming clothe.
+                        Placeholder text commonly used. In publishing and
+                        graphic.
+                      </p>
+                      <div class="d-flex align-items-center gap-3 mt-2">
+                        <div class="testimonial">
+                          <img
+                            src="./assets/images/testimonial.webp"
+                            alt=""
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div>
+                          <h6 class="fw-bold text-white testimonial-name">
+                            Dania Asad
+                          </h6>
+                          <p class="text-white testimonial-job">
+                            Real Estate Agent
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="reviews">
+                      <i class="fa fa-quote-left fs-1" aria-hidden="true"></i>
+                      <p class="reviews-content">
+                        "The automated process starts as soon as your clothe go
+                        into the machine. This site outcome is gleaming clothe.
+                        Placeholder text commonly used. In publishing and
+                        graphic.
+                      </p>
+                      <div class="d-flex align-items-center gap-3 mt-2">
+                        <div class="testimonial">
+                          <img
+                            src="./assets/images/testimonial.webp"
+                            alt=""
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div>
+                          <h6 class="fw-bold text-white testimonial-name">
+                            Faisal Iqbal
+                          </h6>
+                          <p class="text-white testimonial-job">
+                            Full Stack Developer
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="reviews">
+                      <i class="fa fa-quote-left fs-1" aria-hidden="true"></i>
+                      <p class="reviews-content">
+                        "The automated process starts as soon as your clothe go
+                        into the machine. This site outcome is gleaming clothe.
+                        Placeholder text commonly used. In publishing and
+                        graphic.
+                      </p>
+                      <div class="d-flex align-items-center gap-3 mt-2">
+                        <div class="testimonial">
+                          <img
+                            src="./assets/images/testimonial.webp"
+                            alt=""
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div>
+                          <h6 class="fw-bold text-white testimonial-name">
+                            Asif Ali
+                          </h6>
+                          <p class="text-white testimonial-job">
+                            Web Developer at Horizam
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+
+      <!------------------------------------------- Reviews Section Ended ------------------------------------>
+
+      <!------------------------------------------ Footer Section Started ------------------------------------>
+
+      <section>
+        <footer>
+          <div class="container">
+            <div class="row mt-5">
+              <div class="col-12 col-md-4">
+                <div class="mt-5">
+                  <img
+                    src="./assets/images/logo.webp"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <p class="mt-4 lh-lg">
+                    The automated process starts as soon as your clothes go into
+                    the machine.The outcome is gleaming clothes.
+                  </p>
+                  <div class="social-links d-flex gap-2">
+                    <a href="#">
+                      <div class="fb">
+                        <i class="uil uil-facebook-f"></i>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="fb">
+                        <i class="uil uil-instagram"></i>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="fb">
+                        <i class="uil uil-twitter-alt"></i>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="fb">
+                        <i class="uil uil-whatsapp"></i>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="fb">
+                        <i class="uil uil-youtube"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
       </section>
 
       <!------------------------------------------- Reviews Section Ended ----------------------------------->
@@ -570,7 +776,7 @@
         loop: true,
         margin: 10,
         nav: false,
-        dots: true,
+        dots: false,
         autoplay: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -581,14 +787,14 @@
             items: 1,
           },
           600: {
-            items: 3,
+            items: 1,
           },
 
           1000: {
-            items: 5,
+            items: 1,
           },
           1400: {
-            items: 3,
+            items: 1,
           },
         },
       });
@@ -605,7 +811,7 @@
     <script>
       $(".slider").slick({
         dots: false,
-        arrow: true,
+        arrow: false,
         infinite: true,
         autoplay: true,
         speed: 300,
@@ -619,7 +825,7 @@
               slidesToScroll: 3,
               infinite: true,
               dots: true,
-              arrow: true,
+              arrow: false,
             },
           },
           {

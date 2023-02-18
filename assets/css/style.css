@@ -376,11 +376,18 @@ p {
     color: #fff !important;
   }
   .about-heading h1 {
-    font-size: 30px;
-    line-height: 3rem;
+    font-size: 22px;
+    line-height: 2rem;
+  }
+  .about-content p {
+    font-size: 15px;
   }
   .reviews {
     padding: 10px 20px;
+  }
+  .reviews-content {
+    font-size: 18px;
+    color: #fff;
   }
 }
 

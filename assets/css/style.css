@@ -274,6 +274,34 @@ p {
   color: #fff;
   transform: rotateY(180deg);
 }
+
+.userful-links a {
+  text-decoration: none;
+  color: #6d6e8d;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.userful-links a:hover {
+  text-decoration: underline;
+  color: #000dff;
+  margin-left: 5px;
+}
+
+.btn-subscribe {
+  width: 100%;
+  background-color: var(--blue-color);
+  padding: 14px 0px;
+  letter-spacing: 1px;
+  border: none;
+}
+.name i {
+  color: #000dff;
+}
+.name a {
+  text-decoration: none;
+  color: #000dff;
+}
 @media screen and (max-width: 476px) {
   .job-heading {
     font-size: 45px;

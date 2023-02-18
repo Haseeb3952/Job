@@ -13,6 +13,14 @@
       crossorigin="anonymous"
     />
 
+    <!---------------------------------------------- Favicon ------------------------------------------------->
+
+    <link
+      rel="shortcut icon"
+      href="./assets/images/accept.png"
+      type="image/x-icon"
+    />
+
     <!-------------------------------------------- Uni Icons CDN --------------------------------------------->
 
     <link
@@ -104,7 +112,10 @@
                       >
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#"
+                      <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="./jobs.html"
                         >Browse Job</a
                       >
                     </li>
@@ -147,11 +158,11 @@
               <div
                 class="d-flex align-items-center gap-3 mt-5 flex-md-row flex-column"
               >
-                <button
-                  class="btn-blue button_slide slide_right border-0 text-uppercase"
-                >
-                  Looking For a Job?
-                </button>
+                <a href="">
+                  <button class="btn-blue button_slide slide_right border-0">
+                    Looking for a Job
+                  </button>
+                </a>
                 <button class="btn-green">Find Talent</button>
               </div>
             </div>
@@ -772,24 +783,27 @@
                 <p class="mt-4 lh-lg">
                   Subscribe newsletter to get updates about new jobs.
                 </p>
-                <input
-                  type="text"
-                  placeholder="Enter your Email"
-                  class="form-control px-3 py-3"
-                />
-                <div class="mt-2">
-                  <button
-                    class="text-uppercase btn-subscribe fw-bold text-white rounded"
-                  >
-                    Subscribe
-                  </button>
-                </div>
+                <form action="https://formspree.io/f/xwkjopzv" method="POST">
+                  <input
+                    type="text"
+                    placeholder="Enter your Email"
+                    class="form-control px-3 py-3"
+                    required
+                  />
+                  <div class="mt-2">
+                    <button
+                      class="text-uppercase btn-subscribe fw-bold text-white rounded"
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
             <div class="row mt-md-5 mt-1 name">
               <p class="text-center my-4">
-                Copyright ©2023 All rights reserved | This template is made with
-                by <i class="fa fa-heart" aria-hidden="true"></i>
+                Copyright ©2023 All rights reserved | Made by
+                <i class="fa fa-heart" aria-hidden="true"></i>
                 <a href="#"> Abdul Haseeb </a>
               </p>
             </div>

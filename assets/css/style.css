@@ -10,10 +10,15 @@ body {
   --green-color: #27cb8b;
   --blue-color: #000dff;
   --background-green: #eafcfc;
+  --btn-green-bg: #00d363;
   --text-green: #58e5e9;
   --text-blue: #000dff;
 
   --box-shadow: 0px 0px 10px 0.1px #ebebeb;
+}
+
+a {
+  text-decoration: none;
 }
 
 p {
@@ -464,4 +469,109 @@ p {
 input {
   outline: none;
   border: none;
+}
+
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+.btn-check:focus + .btn,
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.btn-reset {
+  background-color: var(--btn-green-bg);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 13px;
+  width: 100%;
+  padding: 15px 0px;
+  transition: 0.4s;
+  border: 1px solid #00d363;
+  font-weight: 500;
+}
+
+.btn-reset:hover {
+  background-color: #fff;
+  color: #00d363;
+  border: 1px solid #00d363;
+}
+
+.job-pic {
+  background-color: #f5f7fa;
+  border: 1px solid #cccccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.green {
+  color: #000;
+  transition: 0.3s;
+}
+
+.green:hover {
+  color: var(--btn-green-bg);
+}
+
+.gray {
+  color: #aab1b7;
+}
+
+.favourite {
+  background-color: #effdf5;
+  transition: 0.4s;
+}
+
+.favourite i {
+  color: var(--btn-green-bg);
+}
+
+.favourite:hover i {
+  color: #fff;
+}
+
+.favourite:hover {
+  background-color: #00d363;
+}
+
+.job-listening {
+  border: 1px solid #fff;
+  transition: 0.3s;
+}
+.job-listening:hover {
+  border: 1px solid #00d363;
+  border-radius: 3px;
+}
+
+.circle {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #cccccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #cccccc;
+}
+
+.circle i {
+  font-size: 29px;
+  color: #cccccc;
+}
+
+.circle:hover {
+  color: #00d363;
+  border: 1px solid #00d363;
+}
+
+.circle:hover i {
+  color: #00d363;
 }

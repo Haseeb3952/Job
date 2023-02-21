@@ -311,6 +311,7 @@ p {
 .fb i {
   transition: 0.5s;
 }
+
 .fb:hover i {
   color: #fff;
   transform: rotateY(180deg);
@@ -336,13 +337,16 @@ p {
   letter-spacing: 1px;
   border: none;
 }
+
 .name i {
   color: #000dff;
 }
+
 .name a {
   text-decoration: none;
   color: #000dff;
 }
+
 @media screen and (max-width: 476px) {
   .job-heading {
     font-size: 45px;
@@ -413,19 +417,24 @@ p {
   .button_slide {
     color: #000 !important;
   }
+
   .btn-blue {
     color: #fff !important;
   }
+
   .about-heading h1 {
     font-size: 22px;
     line-height: 2rem;
   }
+
   .about-content p {
     font-size: 15px;
   }
+
   .reviews {
     padding: 10px 20px;
   }
+
   .reviews-content {
     font-size: 18px;
     color: #fff;
@@ -466,7 +475,7 @@ p {
   height: fit-content;
 }
 
-input {
+.newsletter form input {
   outline: none;
   border: none;
 }
@@ -546,6 +555,7 @@ input {
   border: 1px solid #fff;
   transition: 0.3s;
 }
+
 .job-listening:hover {
   border: 1px solid #00d363;
   border-radius: 3px;
@@ -574,4 +584,47 @@ input {
 
 .circle:hover i {
   color: #00d363;
+}
+
+.job-details-section {
+  background-color: #fbfbfb;
+}
+
+.favourite-job a {
+  text-decoration: none;
+  color: #27cb8b;
+}
+
+.favourite-job {
+  background-color: #effdf5;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #00d363;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+
+.favourite-job:hover {
+  background-color: #00d363;
+}
+
+.favourite-job:hover i {
+  color: #fff;
+}
+
+.responsibility-points li {
+  color: #6d6e8d;
+  padding: 5px 0px;
+}
+
+.job-summary-details ul li {
+  list-style-type: circle;
+  padding: 7px 0px;
+}
+
+.job-summary-details ul li span {
+  color: #cccccc;
 }

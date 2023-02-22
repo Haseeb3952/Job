@@ -439,6 +439,9 @@ p {
     font-size: 18px;
     color: #fff;
   }
+  .contact-us-map iframe {
+    width: 300px;
+  }
 }
 
 /* // Medium devices (tablets, less than 992px) */
@@ -661,4 +664,25 @@ p {
 
 .candidate-box:hover .candidate-name {
   color: var(--btn-green-bg);
+}
+
+.btn-send {
+  background-color: transparent;
+  border: 1px solid #000dff;
+  letter-spacing: 2px;
+  color: #000dff;
+  transition: 0.4s;
+}
+
+.btn-send:hover {
+  background-color: #000dff;
+  color: #fff;
+}
+
+.contact-icon i {
+  color: #6d6e8d;
+}
+
+.contact-icon a {
+  color: #000;
 }

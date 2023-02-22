@@ -31,6 +31,38 @@ p {
   padding: 0px 10px;
 }
 
+.nav-item {
+  position: relative;
+}
+
+.nav-item:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown {
+  position: absolute;
+  opacity: 0;
+  background-color: #000dff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: 0.4s;
+  min-width: 150px;
+  visibility: hidden;
+}
+
+.dropdown a {
+  color: #fff;
+  transition: 0.4s;
+  text-transform: capitalize;
+}
+
+.dropdown a:hover {
+  margin-left: 10px;
+}
+
 .btn-post {
   padding: 15px 34px;
   background-color: var(--green-color);
@@ -43,7 +75,7 @@ p {
 
 .btn-login {
   position: relative;
-  padding: 11px 34px;
+  padding: 13px 34px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -439,6 +471,7 @@ p {
     font-size: 18px;
     color: #fff;
   }
+
   .contact-us-map iframe {
     width: 300px;
   }
@@ -685,4 +718,16 @@ p {
 
 .contact-icon a {
   color: #000;
+}
+
+/* Login Page CSS */
+
+.btn-login-page button {
+  background-color: #000dff;
+  padding: 15px 34px;
+}
+
+.btn-sign-up-page button {
+  background-color: #000dff;
+  padding: 15px 34px;
 }

@@ -628,3 +628,12 @@ p {
 .job-summary-details ul li span {
   color: #cccccc;
 }
+
+.share i {
+  color: #d5d5d5;
+  transition: 0.4s;
+}
+
+.share i:hover {
+  color: var(--btn-green-bg);
+}

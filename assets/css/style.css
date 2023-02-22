@@ -439,6 +439,10 @@ p {
     font-size: 18px;
     color: #fff;
   }
+
+  .google-map iframe {
+    width: 340px;
+  }
 }
 
 /* // Medium devices (tablets, less than 992px) */

@@ -439,10 +439,6 @@ p {
     font-size: 18px;
     color: #fff;
   }
-
-  .google-map iframe {
-    width: 340px;
-  }
 }
 
 /* // Medium devices (tablets, less than 992px) */
@@ -574,6 +570,7 @@ p {
   justify-content: center;
   align-items: center;
   color: #cccccc;
+  transition: 0.4s;
 }
 
 .circle i {
@@ -584,6 +581,7 @@ p {
 .circle:hover {
   color: #00d363;
   border: 1px solid #00d363;
+  transition: 0.4s;
 }
 
 .circle:hover i {
@@ -639,5 +637,28 @@ p {
 }
 
 .share i:hover {
+  color: var(--btn-green-bg);
+}
+
+/* Candidate CSS */
+
+.candidate {
+  background-color: #fbfbfb;
+}
+
+.candidate-name {
+  color: #000;
+  transition: 0.4s;
+}
+
+.candidate-name:hover {
+  color: var(--btn-green-bg);
+}
+
+.candidate-dp:hover .candidate-name {
+  color: var(--btn-green-bg);
+}
+
+.candidate-box:hover .candidate-name {
   color: var(--btn-green-bg);
 }

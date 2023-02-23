@@ -44,11 +44,11 @@
   <body>
     <!----------------------------------------- Navbar Section Started --------------------------------------->
     <section class="about">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row py-md-2">
           <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"
+              <a class="navbar-brand" href="/"
                 ><img
                   src="./assets/images/logo.webp"
                   alt="logo"
@@ -70,12 +70,18 @@
                   class="navbar-nav mx-auto mb-2 mb-lg-0 text-uppercase nav-links"
                 >
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="./index.html"
                       >Home</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="./jobs.html"
                       >Browse Job</a
                     >
                   </li>
@@ -83,9 +89,19 @@
                     <a class="nav-link active" aria-current="page" href="#"
                       >Page</a
                     >
+                    <div
+                      class="dropdown d-flex flex-column gap-1 mt-3 text-white"
+                    >
+                      <a href="./candidates.html"> Candidates </a>
+
+                      <a href="./job_details.html"> Job Details </a>
+                    </div>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="./contact.html"
                       >Contact</a
                     >
                   </li>
@@ -95,24 +111,37 @@
                     Post A Job
                   </button>
 
-                  <a href="" class="">
-                    <button class="btn-job-login px-5">Log in</button>
+                  <a href="./login.html" class="btn-login">
+                    <span></span>
+                    <button class="">Log in</button>
                   </a>
                 </div>
               </div>
             </div>
           </nav>
+        </div>
+      </div>
+    </section>
 
-          <div class="my-5 ms-md-4 ms-0">
-            <h1 class="fw-bold my-5 py-md-5 py-0 px-md-0 px-3">
-              Software Engineer
-            </h1>
+    <!------------------------------------------ Navbar Section Ended ---------------------------------------->
+
+    <!------------------------------------------ Hero Section Started ---------------------------------------->
+
+    <section class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 my-md-5 py-md-5 py-4">
+            <div class="my-5 mx-md-4 mx-4">
+              <div class="my-md-5 hero-heading">
+                <h1 class="fw-bold my-5">Software Engineer</h1>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!------------------------------------------ Navbar Section Ended ------------------------------------->
+    <!-------------------------------------------- Hero Section Started -------------------------------------->
 
     <section class="job-details-section">
       <div class="container">
@@ -358,7 +387,7 @@
     <section class="about">
       <footer>
         <div class="container">
-          <div class="row">
+          <div class="row mt-5">
             <div class="col-12 col-md-4">
               <div class="mt-5">
                 <img src="./assets/images/logo.webp" alt="" class="img-fluid" />
@@ -367,27 +396,36 @@
                   the machine.The outcome is gleaming clothes.
                 </p>
                 <div class="social-links d-flex gap-2">
-                  <a href="#">
+                  <a
+                    href="https://www.facebook.com/username.haseeb"
+                    target="_blank"
+                  >
                     <div class="fb">
                       <i class="uil uil-facebook-f"></i>
                     </div>
                   </a>
-                  <a href="#">
+                  <a
+                    href="https://www.instagram.com/username_haseeb/"
+                    target="_blank"
+                  >
                     <div class="fb">
                       <i class="uil uil-instagram"></i>
                     </div>
                   </a>
-                  <a href="#">
+                  <a href="https://twitter.com/username_haseeb" target="_blank">
                     <div class="fb">
                       <i class="uil uil-twitter-alt"></i>
                     </div>
                   </a>
-                  <a href="#">
+                  <a href="https:/wa.me/+923367063952" target="_blank">
                     <div class="fb">
                       <i class="uil uil-whatsapp"></i>
                     </div>
                   </a>
-                  <a href="#">
+                  <a
+                    href="https://www.youtube.com/channel/UCXWtrYQ6EZrZGZ3Wd4j7Pbw"
+                    target="_blank"
+                  >
                     <div class="fb">
                       <i class="uil uil-youtube"></i>
                     </div>
@@ -425,37 +463,43 @@
               <p class="mt-4 lh-lg">
                 Subscribe newsletter to get updates about new jobs.
               </p>
-              <div class="newsletter">
-                <form action="https://formspree.io/f/xwkjopzv" method="POST">
-                  <input
-                    type="text"
-                    placeholder="Enter your Email"
-                    class="form-control px-3 py-3"
-                    required
-                  />
-                  <div class="mt-2">
-                    <button
-                      class="text-uppercase btn-subscribe fw-bold text-white rounded"
-                    >
-                      Subscribe
-                    </button>
-                  </div>
-                </form>
-              </div>
+              <form action="https://formspree.io/f/xwkjopzv" method="POST">
+                <input
+                  type="text"
+                  placeholder="Enter your Email"
+                  class="form-control px-3 py-3"
+                />
+                <div class="mt-md-2 mt-3">
+                  <button
+                    class="text-uppercase btn-subscribe fw-bold text-white rounded"
+                  >
+                    Subscribe
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
           <div class="row mt-md-5 mt-1 name">
             <p class="text-center my-4">
               Copyright ©2023 All rights reserved | Made by
               <i class="fa fa-heart" aria-hidden="true"></i>
-              <a href="#"> Abdul Haseeb </a>
+              <a
+                href="https://www.instagram.com/username_haseeb/"
+                target="_blank"
+              >
+                Abdul Haseeb
+              </a>
             </p>
           </div>
         </div>
       </footer>
     </section>
 
-    <!------------------------------------------- Reviews Section Ended ----------------------------------->
+    <!------------------------------------------- Reviews Section Ended -------------------------------------->
+
+    <!--------------------------------------------- Custom JavaScript ---------------------------------------->
+
+    <script src="./myScript.js"></script>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

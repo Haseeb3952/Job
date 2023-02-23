@@ -26,6 +26,26 @@ p {
   font-weight: 500;
 }
 
+.navbar {
+  position: relative;
+  z-index: 999;
+  background-color: #ffffff;
+  /* border-bottom: 1px solid #ebebeb; */
+}
+
+.navbar.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ebebeb;
+  background: rgba(255, 255, 255, 0.9) !important;
+  transition: 0.3s;
+  box-shadow: 0 10px 15px rgb(25 25 25 / 10%);
+  z-index: 9999;
+}
+
 .nav-links li {
   font-weight: 600;
   padding: 0px 10px;
@@ -40,6 +60,10 @@ p {
   color: var(--blue-color);
   text-decoration: none;
   font-size: 18px;
+}
+
+.nav-item a:hover {
+  color: var(--blue-color) !important;
 }
 
 .nav-item a:before {
@@ -72,7 +96,7 @@ p {
   padding-left: 20px;
   padding-right: 20px;
   transition: 0.4s;
-  min-width: 150px;
+  min-width: 170px;
   visibility: hidden;
 }
 
@@ -84,6 +108,7 @@ p {
 
 .dropdown a:hover {
   margin-left: 10px;
+  color: #fff !important;
 }
 
 .btn-post {
@@ -103,15 +128,17 @@ p {
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  background-color: var(--blue-color);
+  border-radius: 7px;
 }
 
 .btn-login button {
   border: none;
   outline: none;
-  background-color: transparent;
   color: white;
   font-weight: 600;
   text-transform: uppercase;
+  background-color: transparent;
   z-index: 10;
 }
 
@@ -130,19 +157,25 @@ p {
   background-color: var(--green-color);
 }
 
+.hero-heading h1 {
+  font-size: 50px;
+}
+
 .btn-job {
   position: relative;
-  padding: 11px 34px;
+  padding: 13px 34px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  background-color: var(--blue-color);
+  border-radius: 7px;
 }
 
 .btn-job button {
   border: none;
   outline: none;
-  background-color: var(--blue-color);
+  background-color: transparent;
   color: white;
   font-weight: 600;
   text-transform: uppercase;
@@ -157,7 +190,6 @@ p {
   width: 0;
   border-radius: 7px;
   transition: all 0.5s ease-in-out;
-  background-color: var(--blue-color);
 }
 
 .btn-job:hover span {
@@ -165,24 +197,27 @@ p {
   background-color: var(--green-color);
 }
 
-.button_slide {
-  padding: 15px 34px !important;
-  display: inline-block;
-  background-color: transparent;
-  cursor: pointer;
-  -webkit-transition: ease-out 0.3s;
-  -moz-transition: ease-out 0.3s;
-  transition: ease-out 0.3s;
-  font-family: "Poppins", sans-serif !important;
-  border-radius: 7px;
-  font-weight: 600;
-  border: 2px solid --green-color;
-  box-shadow: --green-color 0px 0px 0px 0px inset;
+#go-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--blue-color);
+  transition: 0.4s !important;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  z-index: 99;
 }
 
-.slide_right:hover {
-  box-shadow: inset 400px 0 0 0 #27cb8b !important;
-  border-radius: 7px;
+#go-top-btn i {
+  color: #fff;
+  font-size: 25px;
 }
 
 .heading h1 {
@@ -233,6 +268,11 @@ p {
 
 .jobs-box {
   border: 0.5px solid #ddd;
+  transition: 0.4s;
+}
+
+.jobs-box:hover {
+  box-shadow: -10px 10px 76px rgb(54 127 255 / 12%);
 }
 
 .jobs-box:hover button {
@@ -285,6 +325,42 @@ p {
 .about-content p {
   font-weight: 400 !important;
   font-size: 17px;
+}
+
+.btn-talent {
+  position: relative;
+  padding: 13px 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: var(--blue-color);
+  border-radius: 7px;
+}
+
+.btn-talent button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  z-index: 10;
+}
+
+.btn-talent span {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  transform-origin: left center;
+  width: 0;
+  border-radius: 7px;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-talent:hover span {
+  width: 100%;
+  background-color: var(--green-color);
 }
 
 .job-category-box {
@@ -438,6 +514,10 @@ p {
 .btn:focus {
   outline: 0;
   box-shadow: none;
+}
+
+.filter-section {
+  box-shadow: -10px 10px 76px rgb(54 127 255 / 12%);
 }
 
 .btn-reset {
@@ -605,6 +685,14 @@ p {
   color: var(--btn-green-bg);
 }
 
+.candidate-box {
+  transition: 0.4s;
+}
+
+.candidate-box:hover {
+  box-shadow: -10px 10px 76px rgb(54 127 255 / 12%);
+}
+
 .candidate-box:hover .candidate-name {
   color: var(--btn-green-bg);
 }
@@ -643,6 +731,10 @@ p {
 }
 
 @media screen and (max-width: 476px) {
+  .btn-login {
+    background-color: var(--blue-color);
+    border-radius: 7px;
+  }
   .job-heading {
     font-size: 45px;
   }
@@ -708,6 +800,9 @@ p {
   .hero {
     background: #f1f5f9;
   }
+  .hero-heading h1 {
+    font-size: 40px;
+  }
 
   .button_slide {
     color: #000 !important;
@@ -718,8 +813,8 @@ p {
   }
 
   .about-heading h1 {
-    font-size: 22px;
-    line-height: 2rem;
+    font-size: 27px;
+    line-height: 2.3rem;
   }
 
   .about-content p {

@@ -294,6 +294,46 @@ p {
   align-items: center;
   border-radius: 50%;
   box-shadow: 0px 0px 10px 0.1px #ebebeb;
+  position: relative;
+  transition: 0.3s;
+}
+
+.logo:hover {
+  animation: shadow-pulse 1s ease-in-out infinite;
+  transform: scale(1.1);
+}
+
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 30 10px rgba(0, 0, 0, 0);
+  }
+}
+
+.logo:hover::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+  animation: circle-pulse 1s ease-in-out infinite;
+}
+
+@keyframes circle-pulse {
+  0% {
+    opacity: 0.7;
+    box-shadow: 0 0 0 0 rgba(105, 97, 97, 0.5);
+  }
+  100% {
+    opacity: 0;
+    box-shadow: 0 0 30 10px rgba(0, 0, 0, 0);
+  }
 }
 
 .btn-apply-now button {
@@ -735,8 +775,9 @@ p {
     background-color: var(--blue-color);
     border-radius: 7px;
   }
+
   .job-heading {
-    font-size: 45px;
+    font-size: 31px;
   }
 
   .btn {
@@ -800,6 +841,7 @@ p {
   .hero {
     background: #f1f5f9;
   }
+
   .hero-heading h1 {
     font-size: 40px;
   }
@@ -832,7 +874,7 @@ p {
   }
 
   .contact-us-map iframe {
-    width: 330px;
+    max-width: fit-content;
   }
 }
 

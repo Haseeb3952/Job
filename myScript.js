@@ -1,4 +1,4 @@
-// Navbar Scroll
+// Navbar fixed on Scrolling Page
 
 var navbar = document.querySelector(".navbar");
 
@@ -11,7 +11,7 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// Go to Top
+// Go to Top Button Hide on Top of the Page
 
 const goTopBtn = document.getElementById("go-top-btn");
 

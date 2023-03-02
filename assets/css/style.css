@@ -30,7 +30,6 @@ p {
   position: relative;
   z-index: 999;
   background-color: #ffffff;
-  /* border-bottom: 1px solid #ebebeb; */
 }
 
 .navbar.fixed {

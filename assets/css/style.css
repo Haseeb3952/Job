@@ -198,8 +198,8 @@ p {
 
 #go-top-btn {
   position: fixed;
-  bottom: 20px;
-  right: 25px;
+  bottom: 100px;
+  right: 35px;
   display: none;
   justify-content: center;
   align-items: center;
